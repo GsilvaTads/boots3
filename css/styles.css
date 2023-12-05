@@ -1,0 +1,289 @@
+/* Estilos para o corpo da página */
+body {
+    background-color: #f8f9fa;
+    color: #020202;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0px; 
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+	position: relative;
+    height: 190px; /* Altura desejada da imagem no header */
+    overflow: hidden;    
+	margin-top: 60px;
+}
+
+header img {
+     width: 90rem;
+     height: 15rem;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+	
+}
+
+/* Estilos para a barra de navegação */
+
+
+nav {
+    background-color: #000408;
+    color: #fff;
+    padding: 10px;
+	margin-top: 0px;	
+	margin-left: auto;
+    margin-right: auto; 
+	margin-top: 0px;
+        
+ }
+
+nav a {
+    
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;    
+    background-color: #000408;  
+}
+
+/* Estilos ao passar o mouse */
+ul li:hover {
+    background-color: rgb(109, 109, 112);
+    
+}
+
+.navbar-brand img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Para manter a proporção da imagem */
+}
+
+
+.carousel {
+    max-width: 300px; /* Ajuste o valor conforme necessário */
+    margin: auto;
+}
+
+/* Estilos para as imagens no carousel */
+.carousel img {
+    width: 50%;
+    height: auto;
+}
+
+
+/* Estilos para a seção principal */
+main {
+    background-color: #fff;
+    padding: 20px;
+	margin-top: 10px;
+	
+}
+
+
+/* Estilos para a seção de produtos */
+
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;	
+}
+
+.produtos figure {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.produtos img {
+    width: 100%;
+    height: auto;
+}
+
+
+.sobrenos{
+  text-align: justify;
+}
+
+
+.banner {
+    border: 5px solid #e45b25;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Animação inicio */
+
+
+.banner {
+  border: 5px solid #e45b25;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+/* Estilos do texto em destaque (h1) */
+.banner h1 {
+  color: #e45b25; /* Cor de destaque */
+  font-size: 1.5em; /* Tamanho do texto */
+  margin-bottom: 10px; /* Espaço inferior */
+  animation: destaque 2s ease-in-out infinite alternate; /* Animação de destaque */
+}
+
+/* Animação de destaque */
+@keyframes destaque {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Animação de rotação para a imagem dentro do grad */
+.grad {
+  margin: 5vw;
+  border-radius: 10px;
+  width: 20vw;
+  height: 20vw;
+  background-color: blue;
+  position: relative;
+  animation: exemplo 4s 1s infinite linear both;
+}
+
+/* Animação de rotação */
+@keyframes exemplo {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.grad img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Animação fim */
+
+
+
+
+
+/* Estilos para a barra lateral */
+aside {
+    background-color: #f8f9fa;
+    padding: 20px;
+	margin-top: 10px;
+}
+
+.acessorios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;	
+}
+
+.acessorios figure {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.acessorios img {
+    width: 100%;
+    height: auto;
+}
+
+
+.modal-body figure {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.modal-body img {
+    width: 80%;
+    height: auto;
+}
+
+
+.modal-miniatura figure {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.modal-miniatura img {
+    width: 30%;
+    height: auto;
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #898a8b;
+    color: #fff;
+    padding: 10px;
+	margin-top: 40px;
+}
+
+/* Estilos para informações de contato, redes sociais e endereço no rodapé */
+.rodape {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    
+}
+
+/* Estilos para os links nas redes sociais no rodapé */
+.redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+.rodape .direitos,
+.rodape .informacoes-contato,
+.rodape .redes-sociais,
+.rodape .endereco-loja {
+    font-size: 12px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+@media screen and (max-width: 1920px) {
+    div.example { display: none; }
+   }
+@media (min-width: 800px) {
+    body { background-color: lavender; }
+   }
+@media only screen and (min-device-width: 375px) and (max-device-width: 480px){
+    { … }
+   }
